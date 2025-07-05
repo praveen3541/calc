@@ -9,6 +9,8 @@
   <input type="number" id="num2">
   <button onclick="add()">Add</button>
   <button onclick="subtract()">Subtract</button>
+  <button onclick="multi()">multiply</button>
+  <button onclick="div()">divide</button>
   <p id="result"></p>
   <script>
     function add() {
@@ -22,7 +24,17 @@ function subtract() {
   let b = parseFloat(document.getElementById("num2").value);
   document.getElementById("result").innerText = "Result: " + (a - b);
 }
+function multi() {
+  let a = parseFloat(document.getElementById("num1").value);
+  let b = parseFloat(document.getElementById("num2").value);
+  document.getElementById("result").innerText = "Result: " + (a * b);
+}
 
+function div() {
+  let a = parseFloat(document.getElementById("num1").value);
+  let b = parseFloat(document.getElementById("num2").value);
+  document.getElementById("result").innerText = "Result: " + (a / b);
+}
   </script>
 </body>
 </html>
